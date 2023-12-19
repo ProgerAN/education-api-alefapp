@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "dc24e1e6-5e4a-40a0-be3b-ace7ce99fe6f",
+		"name": "AlefTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8965457"
+	},
+	"item": [
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get all students",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get current student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students/3",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students?name=test&email=test@1.ru&classroom_id=123142",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test",
+									"description": "\n\n"
+								},
+								{
+									"key": "email",
+									"value": "test@1.ru"
+								},
+								{
+									"key": "classroom_id",
+									"value": "123142"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students/1?name=alan&classroom_id=2",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "alan",
+									"description": "\n\n"
+								},
+								{
+									"key": "classroom_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students/1",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classroom",
+			"item": [
+				{
+					"name": "Get all classrooms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/classrooms",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"classrooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get current classrooms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students/3",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create classroom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/classrooms",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"classrooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update classroom lecture order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/classrooms/9/updatePlan?lectures={\"lectures\":[{\"id\":1,\"order\":1},{\"id\":2,\"order\":3},{\"id\":6,\"order\":23}]}",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"classrooms",
+								"9",
+								"updatePlan"
+							],
+							"query": [
+								{
+									"key": "lectures",
+									"value": "{\"lectures\":[{\"id\":1,\"order\":1},{\"id\":2,\"order\":3},{\"id\":6,\"order\":23}]}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update classroom name",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/classrooms/9/updatePlan?lectures={\"lectures\":[{\"id\":1,\"order\":1},{\"id\":2,\"order\":3},{\"id\":6,\"order\":23}]}",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"classrooms",
+								"9",
+								"updatePlan"
+							],
+							"query": [
+								{
+									"key": "lectures",
+									"value": "{\"lectures\":[{\"id\":1,\"order\":1},{\"id\":2,\"order\":3},{\"id\":6,\"order\":23}]}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete classroom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/students/1?name=alan&classroom_id=2",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"students",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "alan",
+									"description": "\n\n"
+								},
+								{
+									"key": "classroom_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lectures",
+			"item": [
+				{
+					"name": "Get all lectures",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/lectures",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"lectures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get current lecture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/lectures/1",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"lectures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create lecture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/lectures?topic=test&description=some text",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"lectures"
+							],
+							"query": [
+								{
+									"key": "topic",
+									"value": "test",
+									"description": "\n\n"
+								},
+								{
+									"key": "description",
+									"value": "some text"
+								},
+								{
+									"key": "classroom_id",
+									"value": "123142",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update lecture",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/lectures/11?topic=test22&description=some text2",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"lectures",
+								"11"
+							],
+							"query": [
+								{
+									"key": "topic",
+									"value": "test22"
+								},
+								{
+									"key": "description",
+									"value": "some text2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete lecture",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://alef-test.loc/api/lectures/1",
+							"protocol": "http",
+							"host": [
+								"alef-test",
+								"loc"
+							],
+							"path": [
+								"api",
+								"lectures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
